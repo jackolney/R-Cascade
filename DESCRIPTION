@@ -1,5 +1,6 @@
 Package: CareCascade
 Title: Mathematical Model of HIV Care in Western Kenya
+Date: 23-12-2015
 Version: 1.0
 Authors@R: person("Jack", "Olney", email = "jack.olney11@imperial.ac.uk", role = c("aut", "cre"))
 Description: Microsimulation of HIV epidemic in western Kenya from 1970 to
