@@ -1,4 +1,4 @@
-#' Call CareCascade Model
+#' @title Call CareCascade Model
 #'
 #' This function calls the 'CareCascade' model. Various scenarios can be simulated by updating parameters.
 #' @param s_pop Set the population size denominator (e.g. 10 = 1/10th population size of Kenya)
@@ -14,7 +14,7 @@
 #' @param s_Adherence Set to '1' to implement 'Adherence' intervention.
 #' @param s_ImmediateArt Set to '1' to implement 'Immediate ART' intervention.
 #' @param s_UniversalTestAndTreat Set to '1' to implement 'Universal Test \& Treat' intervention.
-#' @param s_Calibration Set to '1' to implement calibration version of 'HBCT' intervention. 
+#' @param s_Calibration Set to '1' to implement calibration version of 'HBCT' intervention.
 #' @keywords HIV Care Cascade Mathematical Model Kenya
 #' @export
 #' @examples
@@ -34,7 +34,7 @@
 #'  s_ImmediateArt = 0,
 #'  s_UniversalTestAndTreat = 0,
 #'  s_Calibration = 0)
-#' @useDynLib CareCascade CallCascade
+#' @useDynLib CareCascade
 
 Cascade <- function(s_pop, s_Hbct, s_Vct, s_HbctPocCd4, s_Linkage, s_VctPocCd4, s_PreOutreach, s_ImprovedCare, s_PocCd4, s_ArtOutreach, s_Adherence, s_ImmediateArt, s_UniversalTestAndTreat, s_Calibration) {
     .Call('CallCascade', PACKAGE = 'CareCascade', s_pop, s_Hbct, s_Vct, s_HbctPocCd4, s_Linkage, s_VctPocCd4, s_PreOutreach, s_ImprovedCare, s_PocCd4, s_ArtOutreach, s_Adherence, s_ImmediateArt, s_UniversalTestAndTreat, s_Calibration)
