@@ -2,7 +2,9 @@
 % Please edit documentation in R/Cascade.R
 \name{Cascade}
 \alias{Cascade}
-\title{Call CareCascade Model}
+\title{Call CareCascade Model
+
+This function calls the 'CareCascade' model. Various scenarios can be simulated by updating parameters.}
 \usage{
 Cascade(s_pop, s_Hbct, s_Vct, s_HbctPocCd4, s_Linkage, s_VctPocCd4,
   s_PreOutreach, s_ImprovedCare, s_PocCd4, s_ArtOutreach, s_Adherence,
@@ -38,6 +40,8 @@ Cascade(s_pop, s_Hbct, s_Vct, s_HbctPocCd4, s_Linkage, s_VctPocCd4,
 \item{s_Calibration}{Set to '1' to implement calibration version of 'HBCT' intervention.}
 }
 \description{
+Call CareCascade Model
+
 This function calls the 'CareCascade' model. Various scenarios can be simulated by updating parameters.
 }
 \examples{
