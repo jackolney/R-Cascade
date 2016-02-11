@@ -276,7 +276,7 @@ void population::RandomiseInfection(const size_t theSize, const size_t theRow, v
 	random_shuffle(theVector.begin(),theVector.end(),Random);
 
 	for(size_t i=0;i<theSize;i++)
-		new Infection(people.at(theRow).at(theVector.at(i)->GetPersonIndex()),theTime + (theRng->doub() * 365.25));
+		new Infection(people.at(theRow).at(theVector.at(i)->GetPersonIndex()),theTime + (unif_rand() * 365.25));
 }
 
 /////////////////////
